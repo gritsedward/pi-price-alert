@@ -4,7 +4,7 @@ import os
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
 
-TARGET_PRICE = 1.00
+TARGET_PRICE = 0.01
 
 url = "https://api.coingecko.com/api/v3/simple/price?ids=pi-network&vs_currencies=usd"
 
