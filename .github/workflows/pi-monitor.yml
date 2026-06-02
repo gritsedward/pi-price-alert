@@ -1,0 +1,25 @@
+name: PI Price Monitor
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+
+  workflow_dispatch:
+
+jobs:
+  check-price:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - run: python pi_alert.py
+        env:
+          BOT_TOKEN: ${{ secrets.8998290195:AAF9TXLeBKZdHG6qqHvwItYCeGBlbds45LM }}
+          CHAT_ID: ${{ secrets.561404614 }}
