@@ -1,8 +1,8 @@
 import requests
 import os
 
-BOT_TOKEN = os.environ["8998290195:AAF9TXLeBKZdHG6qqHvwItYCeGBlbds45LM"]
-CHAT_ID = os.environ["561404614"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
 
 TARGET_PRICE = 1.00
 
